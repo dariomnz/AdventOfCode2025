@@ -31,8 +31,6 @@ const dial = struct {
 };
 
 pub fn main() !void {
-    std.debug.print("Hello world\n", .{});
-
     const file = try std.fs.cwd().openFile("day1-input.txt", .{});
     var buffer: [1024]u8 = undefined;
     var reader = file.reader(&buffer);
