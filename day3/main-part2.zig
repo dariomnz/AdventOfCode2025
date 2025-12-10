@@ -30,7 +30,7 @@ fn get_max(buffer_num: []u8) !usize {
 }
 
 pub fn main() !void {
-    const file = try std.fs.cwd().openFile("day2-input.txt", .{});
+    const file = try std.fs.cwd().openFile("day3-input.txt", .{});
     var buffer: [1024]u8 = undefined;
     var reader = file.reader(&buffer);
 
